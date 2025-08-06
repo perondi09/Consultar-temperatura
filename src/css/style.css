@@ -1,18 +1,142 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
-    background-color: #61a0ff;
+    background-image: url("https://wallpapers.com/images/hd/highway-and-bad-weather-rbksp3jv3htqc4af.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fdfdfd;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 container {
-    background-color: wheat;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    background-color: rgba(17, 17, 17, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+container>h1 {
+    display: none;
+}
+
+.form h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-input-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#cidade-input {
+    flex: 1;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fdfdfd;
+    font-size: 1rem;
+}
+
+#cidade-input::placeholder {
+    color: #ccc;
+}
+
+#buscar {
+    padding: 0.8rem;
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#buscar:hover {
+    background-color: #7b1dd6;
+}
+
+#temperatura-data {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+#temperatura-data h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.5rem;
+}
+
+#pais-bandeira {
+    height: 32px;
+}
+
+#temperatura {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+#temperatura span {
+    position: relative;
+}
+
+#temperatura sup {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+}
+
+.descricao-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+#temperatura-icone {
+    width: 50px;
+    height: 50px;
+}
+
+.detalhes-container {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.detalhes-container p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }

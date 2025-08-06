@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperatura</title>
 
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
     <!-- Css e JS -->
     <link rel="stylesheet" href="./src/css/style.css" />
     <script src="./src/js/main.js" defer></script>
@@ -16,18 +21,18 @@
         <h1>Temperatura atual</h1>
 
         <div class="form">
-            <h3>Confira o clima na sua cidade</h3>
+            <h1>Confira o clima na sua cidade</h1>
 
-            <div class="fomr-input-container">
+            <div class="form-input-container">
 
                 <input type="text" id="cidade-input" placeholder="Digite o nome da cidade" />
 
-                <button id="buscar">Buscar</button>
+                <button id="buscar" class="botao">Buscar</button>
 
             </div>
         </div>
 
-        <div id="temperatura-data" class="hide">
+        <div id="temperatura-data" class="temperatura">
 
             <h2>
                 <span id="cidade-nome"></span>
@@ -49,6 +54,7 @@
         </div>
 
     </container>
+
 </body>
 
 </html>
