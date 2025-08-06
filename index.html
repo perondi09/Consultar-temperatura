@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperatura</title>
+
+    <!-- Css e JS -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./src/js/main.js" defer></script>
+</head>
+
+<body>
+    <container>
+        <h1>Temperatura atual</h1>
+
+        <div class="form">
+            <h3>Confira o clima na sua cidade</h3>
+
+            <div class="fomr-input-container">
+
+                <input type="text" id="cidade-input" placeholder="Digite o nome da cidade" />
+
+                <button id="buscar">Buscar</button>
+
+            </div>
+        </div>
+
+        <div id="temperatura-data" class="hide">
+
+            <h2>
+                <span id="cidade-nome"></span>
+                <img id="pais-bandeira" src="" />
+            </h2>
+
+            <p id="temperatura"><span></span>&deg;C</p>
+
+            <div class="descricao-container">
+                <p id="descricao"></p>
+                <img src="" id="temperatura-icone">
+            </div>
+
+            <div class="detalhes-container">
+                <p id="umidade"> <span></span></p>
+                <p id="vento"> <span></span></p>
+            </div>
+
+        </div>
+
+    </container>
+</body>
+
+</html>
