@@ -1,4 +1,4 @@
-const apiKey = "dd0f7372f40e640876709d9b8b00c1e7" .env
+const apiKey = "dd0f7372f40e640876709d9b8b00c1e7"
 const apiPaisesKey = "https://flagsapi.com/png"
 
 const cidadeInput = document.querySelector("#cidade-input");
